@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "server:debug": "nodemon --inspect app.js",
     "start": "node app.js",
     "server": "nodemon app.js",
     "debug": "node --inspect app.js",
@@ -12,10 +11,6 @@
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/christianwooddell/MERN-Twitter.git"
   },
   "author": "",
   "license": "ISC",
