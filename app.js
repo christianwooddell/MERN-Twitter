@@ -22,7 +22,6 @@ mongoose
     })
     .catch((err) => console.log(err));
 
-app.get("/", (req, res) => res.send("hey bestie"));
 
 
 app.use(passport.initialize());
